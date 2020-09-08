@@ -72,7 +72,7 @@ Look back at the OpenFlights data page to see the fields available in the airpor
 ## Exercise 3 - Route distances
 Now that we have the lat/lon of each airport we can calculate the distance of each airline route.
 
-Calculating geographic distances is a bit tricky because the earth is a sphere (actually, it's an oblate spheroid). The distance we measure is the “great circle distance”. We’re not going to implement our own great circle distance function in Python here, instead you can download a Python file with a `geo_distance()` function from here. Feel free to have a peek at it if you like, but don’t worry about completely understanding it at this stage. There are two ways you can use this function:
+Calculating geographic distances is a bit tricky because the earth is a sphere (actually, it's an oblate spheroid). The distance we measure is the “great circle distance”. We’re not going to implement our own great circle distance function in Python here, instead you can download a Python file with a `geo_distance()` function (use the file `geo_distance.py` in this repo!). Feel free to have a peek at it if you like, but don’t worry about completely understanding it at this stage. There are two ways you can use this function:
 1. Place the file in the Notebook working directory and then import it as a Python module to use it (you can test it with the code below)
 
 ```python

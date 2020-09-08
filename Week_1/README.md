@@ -36,7 +36,7 @@ There are a few good reasons to use the CSV module here:
 # **Reading Airport Data**
 We’re going to do some processing of real-world data now, using freely available airline data sets from the [OpenFlights project](https://openflights.org/).
 
-Visit the [OpenFlights data page](https://openflights.org/data.html) and download their airports data file - “airports.dat”. This is a file in CSV format, open it in a text editor if you want to have a look at it.
+Visit the [OpenFlights data page](https://openflights.org/data.html) and download their airports data file - “airports.dat”. This is a file in CSV format, open it in a text editor if you want to have a look at it. If, for some reason, you can't access the OpenFlights page or download the data, there is an [archived data set in the data folder of this tutorial](data/airports.dat).
 
 ## Exercise 1
 
@@ -55,7 +55,7 @@ Don't forget to start by uploading the airports.dat file!
 
 We’re going to combine everything we’ve learned into a more complex problem to solve.
 
-OpenFlights distribute databases for both airline locations and airline route details. You can download the routes database “routes.dat” from the OpenFlights data page. This database stores every unique flight route that OpenFlights knows about. Take a moment to look at the fields available in the routes data (listed on the OpenFlights page.)
+OpenFlights distribute databases for both airline locations and airline route details. You can download the routes database “routes.dat” from the OpenFlights data page. This database stores every unique flight route that OpenFlights knows about. Take a moment to look at the fields available in the routes data (listed on the OpenFlights page.) Again, if for some reason, you can't access the OpenFlights page or download the data, there is an [archived data set in the data folder of this tutorial](data/routes.dat).
 
 By using both data sources, we can calculate how far each route travels and then plot a histogram showing the distribution of distances flown.
 

@@ -1,5 +1,18 @@
 # **Analyzing Airport Data**
-Before we get to the data, let's briefly touch on Reading and writing comma-separated data, or data from `.csv` files. Comma-separated values (CSV) is a way of expressing structured data in flat text files:
+In this assignment we're going to analyze aiport data. We'll be downloading some data in a common file format, exploring it using Python to discover the distances of certain flights, and then creating a basic [histogram](https://en.wikipedia.org/wiki/Histogram) as our final output.  
+
+### To complete this assignment you will need:
+- A Google account. We'll be using Colab, but also space in your Google Drive: this will be nice example of hosting a small data science project with your own services.
+- Data downloaded from the [OpenFlights Project](https://openflights.org/data.html). If, for some reason you can't access the site or download the data, there is a [data folder in this repo](data) that contains archived data you could use. That being said, I want you to use the most recent data you can get!
+
+### What you will submit:
+A link to your Github repo. The repo must contain your Python code (either as script in `.py` or a notebook in `.ipynb` format). The `README` of your repo should briefly summarize the project (in your own words) and contain an embdded image of your final output. You do not need to include the data files you downloaded (as I have here), but can if you like. 
+
+## Why is this lab important? 
+Up to now, we've been learning about the basics of Python and have done work manipulating strings, lists, dictionaries, and have started importing files such as `.txt` files. In this lab, we're going to be working with multiple files in `.csv` format. Spreadsheets are, for better or worse, the _lingua franca_ of humanitarian and international development data. As [Sarah Telford of the UN's Humanitarian Data Exchange platform tells it](https://www.devex.com/news/opinion-humanitarian-world-is-full-of-data-myths-here-are-the-most-popular-91959), "Big data is promising, but the challenge in the humanitarian sector is bringing together small amounts of non-standardized data, mostly stored in spreadsheets, from dozens of organizations to create a common picture of needs and response." The ability to find tabular (ie. spreadsheet) data; explore it; manipulate it; and analyze it is a critical skill. Not only that, but being able to provide basic graphical reprsentation of quantitative information (our histogram of flight distances) that helps decision makers understand the basics of data, are important. Again, to cite the article above, "...cleaning and combing data and making choices about how data will be presented... is different than drawing conclusions from the data to understand why a crisis is deteriorating, or to decide whether to prioritize a cash response rather than food distribution. Data experts create the visuals; subject matter experts do the analysis." It's important to understand that, sometimes, your role as a GIS analyst may be to prepare and display data for decision makers (and [there are a LOT of them in the humanitarian world](https://blog.veritythink.com/post/60157407408/these-are-the-humanitarian-decision-makers)).  
+
+# Getting started
+Before we get to the data, let's briefly touch on reading and writing comma-separated data, or data from `.csv` files. Comma-separated values (CSV) is a way of expressing structured data in flat text files:
 
 ```
 "Refugee_Camp_Name","Country","Population2006","Population2014"
@@ -26,7 +39,7 @@ Each row is read as a list of strings representing the fields in the row.
 
 ## Why not use `.split()` or `.strip()`?
 
-We already a learned another way to do this, we’ve learned `split(",")` to split each row of text into comma-delimited fields, and then `strip()` to take off the quote marks. (We did this with the survey in IDCE 302, if you recall!)
+We already a learned another way to do this. We’ve learned `split(",")` to split each row of text into comma-delimited fields, and then `strip()` to take off the quote marks, in IDCE 302 using these methods to clean up the `.txt` survey file, if you recall!
 
 There are a few good reasons to use the CSV module here:
 *   The csv module makes it clear what you’re doing to anyone reading your code.
@@ -34,11 +47,9 @@ There are a few good reasons to use the CSV module here:
 *   The csv module has a lot of other features ([documented here](https://docs.python.org/3/library/csv.html)) that allow it to process differently formatted files, so you can easily update your program if the file format changes.
 
 # **Reading Airport Data**
-We’re going to do some processing of real-world data now, using freely available airline data sets from the [OpenFlights project](https://openflights.org/).
+We’re going process our own data now, using freely available airline data sets from the [OpenFlights project](https://openflights.org/). Visit the [OpenFlights data page](https://openflights.org/data.html) and download their airports data file - “airports.dat”. This is a file in CSV format, open it in a text editor if you want to have a look at it. If, for some reason, you can't access the OpenFlights page or download the data, there is an [archived data set in the data folder of this tutorial](data/airports.dat).
 
-Visit the [OpenFlights data page](https://openflights.org/data.html) and download their airports data file - “airports.dat”. This is a file in CSV format, open it in a text editor if you want to have a look at it. If, for some reason, you can't access the OpenFlights page or download the data, there is an [archived data set in the data folder of this tutorial](data/airports.dat).
-
-## Exercise 1
+## Challenge 1
 
 Can you use this file to print all of the airport names for a particular country (say, Australia or Russia)? To get you started, on the OpenFlights web page it shows that “Name” is the second field in each row of data. This means in the list of fields it will have index 1 (index 0 is the first field.)
 
@@ -64,12 +75,12 @@ This a multiple stage problem:
 *   Read the routes file (routes.dat) and get the IDs of the source and destination airports. Look up the latitude and longitude based on the ID. Using those coordinates, calculate the length of the route and append it to a list of all route lengths.
 *   Plot a histogram based on the route lengths, to show the distribution of different flight distances.
 
-## Exercise 2 - Reading the airport database
+## Challenge 2 - Reading the airport database
 Write code to read through “airports.dat” and create a dictionary mapping from an airport ID key (use the numeric ID in the first field) to the geographic coordinates. You may want to create two dictionaries, one holding latitudes and one holding longitudes.
 
 Look back at the OpenFlights data page to see the fields available in the airports.dat file. Hint: I ended up having to look at a copy of their data in their Github repo. 
 
-## Exercise 3 - Route distances
+## Challenge 3 - Route distances
 Now that we have the lat/lon of each airport we can calculate the distance of each airline route.
 
 Calculating geographic distances is a bit tricky because the earth is a sphere (actually, it's an oblate spheroid). The distance we measure is the “great circle distance”. We’re not going to implement our own great circle distance function in Python here, instead you can download a Python file with a `geo_distance()` function (use the file `geo_distance.py` in this repo!). Feel free to have a peek at it if you like, but don’t worry about completely understanding it at this stage. There are two ways you can use this function:
@@ -112,7 +123,7 @@ When looking at the list of fields in the OpenFlights data documentation, rememb
 
 TIP: You might come across an error like “KeyError: \N” when you first run your program. This is another problem of ‘dirty data’, the “routes.dat” file contains some airports that aren’t listed in “airports.dat”. You can skip these routes by adding a test of the type `if airport in latitudes`. Don't forget that even if you've previously uploaded the "airports.dat" file to this notebook you'll also need to add the "routes.dat" file to Colab here. 
 
-## Exercise 4 - Histogram
+## Challenge 4 - Histogram
 Now we’re ready to create a histogram displaying the frequency of flights by distance. I suggest using `plt.hist()`, which can do most of the work. The first argument you supply will be the dataset (list of distances). The second argument (try starting with 100) is the number of bins to divide the histogram into. You can increase this number to see more distinct bars and a more detailed picture, or reduce it to see a coarser picture. Try setting it to some other values and see what happens to the histogram plot.
 
 The third argument, `facecolor`, sets the color of the graph, “r” for red. There are a lot of ways to specify colors in matplotlib, all of which are [explained in the documentation](https://matplotlib.org/api/colors_api.html). All of the arguments that can be used with `hist()` can be found in the [matplotlib documentation](https://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist). 

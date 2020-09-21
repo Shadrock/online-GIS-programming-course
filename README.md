@@ -1,8 +1,10 @@
 # Online GIS Programming Course Materials
 This repo contains labs, and other materials for a six-week introductory GIS programming course. This course can be delivered entirely online. The course builds on my **six-week, introduction to Python course.** By the end of these activities, students should:
-- have an intermediate understanding of Python, including manipulating a variety of file formats, concatentating data, and presenting using various libraries to create basic analytic or graphical outputs (including finishing outputs using tools such as [Carto](https://carto.com/) or [Tableau](https://www.tableau.com/);
+- have an intermediate understanding of Python, including manipulating a variety of file formats (I emphasize `.csv`), concatentating data, and presenting using various libraries to create basic analytic or graphical outputs (including finishing outputs using tools such as [Carto](https://carto.com/) or [Tableau](https://www.tableau.com/);
 - demonstrate proficiency creating a range of different scripts; and
 - have online examples the show their ability to navigate, comment on, document, and share code.
+
+**TBD on Google Earth Engine**
 
 ## Required Software / Web Applications
 This class uses Python 3.x for coding, [Jupyter notebooks](https://jupyter.org/) – specifically [Google Colaboratory](https://colab.research.google.com/) – for demonstrations and lectures, and Github for submitting code work. I have found that using Google Colaboratory (or “Colab”) greatly reduces the frustration of relying on University IT maintenance and labs since the coding is done via browser and everything is run on Google servers. The downside is that it requires good connectivity. There are other huge benefits to using Jupyter notebooks, including the fact that you can combine code, outputs, explanatory text, and multi-media files. Read more about them in this [*Nature* blog post](https://www.nature.com/articles/d41586-018-07196-1). [Colab is well documented](https://colab.research.google.com/notebooks/intro.ipynb) and a good first stop for students is the [Overview of Colab Features](https://colab.research.google.com/notebooks/basic_features_overview.ipynb). 
@@ -14,7 +16,7 @@ I recommend instructors survey their students before class to ensure their compu
 **To complete these activities students will need:**
 - a Github account (specifically [the student developer pack](https://education.github.com/pack)) for receiving assignments and sharing code, and for...
 - a free student account on Carto. Students can _only_ get one of these by authenticating with their [Github Student Developer pack](https://education.github.com/pack) and not the normal, free, Github account. [Go here for details and links](https://carto.com/help/getting-started/student-accounts/): the process shouldn't take long.
-- a [Google account](https://www.google.com), and
+- a [Google account](https://www.google.com) for using Colab, storing files in Drive, and using Google Earth Engine, and
 - a version of Python 3 running locally in the event that they cannot access Colab.
 
 ## Contents & Delivery of Activities

@@ -1,0 +1,1 @@
+These are *archived* data sets that students can use if, for some reason, they have problem accessing the DC’s open data portal: specifically [their page on Planned Unit Developments](https://opendata.dc.gov/datasets/planned-unit-development-puds) and the [Affordable Housing page](https://opendata.dc.gov/datasets/affordable-housing) as specified in the tutorial. 

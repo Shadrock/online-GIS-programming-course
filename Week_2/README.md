@@ -39,7 +39,7 @@ We're going to use a popular [Python package called Pandas](https://pandas.pydat
 
 [GeoPandas](https://geopandas.org/) is a library that builds upon these capabilities and enables modeling of points, lines, and polygons from the GIS package [Shapely](https://pypi.org/project/Shapely/). You will also need to import a couple additional packages called rtree and spatialindex to support operations in GeoPandas. The relationship between all these different packages, libraries, etc. is called "dependencies" and often times just debugging your dependencies can require some time and effort. Luckily, we've already done that for you!
 
-Although Pandas is already installed in the Google Colab environment, we will need to install the more specific GIS packages. In order to bring these geospatial-specific packages into Google’s environment, install them by running the following code (note that this may take a few moments and that you'll likely see lots of update messages).
+Although Pandas is already installed in the Google Colab environment, we will need to install the more specific GIS packages. In order to bring these geospatial-specific packages into Google’s environment, we install them by running the following code (note that this may take a few moments and that you'll likely see lots of update messages).
 
 Also note that we're using `import ... as` to simplify the name. So `pandas` will be referred to as `pd` in our code... this is just a way to simplify and shorten things. We'll also be using `from` to grab specific parts of different packages. Find more information on importing packages to Python on this [nice, succinct, blog post](https://medium.com/code-85/a-beginners-guide-to-importing-in-python-bb3adbbacc2b). On to the code:
 ```python
@@ -56,7 +56,7 @@ from shapely import wkt  # stands for "well known text," allows for interchange 
 import rtree  # supports geospatial join
 ```
 
-The final item you should see in the list above is `Successfully installed rtree-0.9.4` (or some later version). 
+The final update message you should see after running the code above is `Successfully installed rtree-0.9.4` (or some later version), since that's the last import you've executed. This is how you'll know Colab is done. 
 
 Now, we’ll connect Google Colab to Google Drive. This is an easy way to manage small data science projects and store relevant data in your Drive. When you run the code below, Google will ask you for an authorization code that you will copy from the provided link and paste into a text box in Colab. Afterwards, your Colab notebook will be linked to your Google Drive.
 ```python

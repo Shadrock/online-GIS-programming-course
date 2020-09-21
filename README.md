@@ -1,7 +1,4 @@
-# online-GIS-programming-course
-Activities for teaching GIS programming online, taken from my IDCE 30274 course at Clark University 
-
-# Online Introductory Python Course Materials
+# Online GIS Programming Course Materials
 This repo contains labs, and other materials for a six-week introductory GIS programming course. This course can be delivered entirely online. The course builds on my **six-week, introduction to Python course.** By the end of these activities, students should:
 - have an intermediate understanding of Python, including maniuplating a variet of file formats, concatentating data, and presenting basic analytic or graphical outputs;
 - demonstrate proficiency creating a range of different scripts; and

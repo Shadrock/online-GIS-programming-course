@@ -5,8 +5,8 @@ Check out a live version of [my finished product here](https://shadrock.carto.co
 
 ### To complete this assignment you will need:
 - A Google account. We'll be using Colab, but also space in your Google Drive: this will be nice example of hosting a small data science project with your own services.
-- Data downloaded from [OpenData D.C.](https://opendata.dc.gov/). If, for some reason you can't access the site or download the data, there is a [data folder in this repo](data) that contains archived data you could use. 
-- A free student account on Carto. You get _only_ get one of these by authenticating with your [Github Student Developer pack](https://education.github.com/pack) (pretty nifty, eh?). [Go here for details links](https://carto.com/help/getting-started/student-accounts/): the process shouldn't take long. Note that a normal, free, Github account will not work!
+- Data downloaded from [OpenData D.C.](https://opendata.dc.gov/). If, for some reason you can't access the site or download the data, there is a [data folder in this repo](data) that contains archived data you could use. That being said, I want you to use the most recent data you can get!
+- A free student account on Carto. You get _only_ get one of these by authenticating with your [Github Student Developer pack](https://education.github.com/pack) (pretty nifty, eh?). [Go here for details and links](https://carto.com/help/getting-started/student-accounts/): the process shouldn't take long. Note that a normal, free, Github account will not work!
 
 ### What you will submit:
 A link to your Github repo. The repo must contain your Python code (either as script in `.py` or a notebook in `.ipynb` format). The `README` of your repo should briefly summarize the project (in your own words), show an image of your final output, *and* link to your final map in Carto. You do not need to include the input/output files (as I have here) but it might be a good idea if you want to use this repo as part of your portfolio. 

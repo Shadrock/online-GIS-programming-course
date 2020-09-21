@@ -117,7 +117,7 @@ Now we’re ready to create a histogram displaying the frequency of flights by d
 
 The third argument, `facecolor`, sets the color of the graph, “r” for red. There are a lot of ways to specify colors in matplotlib, all of which are [explained in the documentation](https://matplotlib.org/api/colors_api.html). All of the arguments that can be used with `hist()` can be found in the [matplotlib documentation](https://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist). 
 
-For my solution, I imported two libraries as "aliased" them. It is possible to modify the names of modules and their functions within Python by using the `as` keyword. There are times when you may want to change a name because you have already used the same name for something else in your program, another module you have imported also uses that name, or you may want to abbreviate a longer name that you are using a lot. The construction of this statement looks like this: 
+For my solution, I imported two libraries using `as` to "alias" them. It is possible to modify the names of modules and their functions within Python by using the `as` keyword. There are times when you may want to change a name because you have already used the same name for something else in your program, another module you have imported also uses that name, or you may want to abbreviate a longer name that you are using a lot. The construction of this statement looks like this: 
 ```python
 import module_name as another_name
 ```

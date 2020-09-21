@@ -16,8 +16,8 @@ The United States is facing a housing crisis: the cost of housing has skyrockete
 
 One way to study eviction is to look at how cities handle [zoning](https://www.smgov.net/Departments/PCD/Zoning/What-is-Zoning/), the laws which govern how land can be used. Gentrification, the process of renovating and improving an area to attract wealthier residents, can cause displacement of current residents, but can also _potentially_ unlock economic opportunity. The city of Washington D.C., is using "Planned Unit Developments", in an attempt to broadly redistribute the benefits of urban redevelopment by offering amenities such as affordable housing, improved public transportation, and in exchange for zoning exemptions. However, this will need to be studied over the long-term to see if it works. For example, Planned Unit Developments, even those offering affordable housing as part of their community benefit package, could still contribute to higher eviction rates in anticipation of the appreciation of land values. 
 
-In this lab, we'll use Python to gather some open data about zoning in D.C. and create a map of zoning exemptions. This would be the first step to overlaying these data with other demographic data and will visually answer the question:
-_How can we categorize buildings that received a zoning exemption in Washington, DC?_
+In this lab, we'll use Python to gather some open data about zoning in D.C. and create a map of zoning exemptions. This would be the first step to overlaying these data with other demographic data and will answer the question:
+_Can we categorize and visualize buildings that received a zoning exemption in Washington, DC?_
 
 ## Data from Open Data DC!
 The data for this exercise comes from DC’s open data portal, specifically [their page on Planned Unit Developments](https://opendata.dc.gov/datasets/planned-unit-development-puds). Isn't it great that they are supplying open data? From the PUDs page, download the shapefile from the dropdown options. You'll need to unzip the folder and add all the different files that make up a `.shp` file to your Drive. 
@@ -39,9 +39,9 @@ We're going to use a popular [Python package called Pandas](https://pandas.pydat
 
 [GeoPandas](https://geopandas.org/) is a library that builds upon these capabilities and enables modeling of points, lines, and polygons from the GIS package [Shapely](https://pypi.org/project/Shapely/). You will also need to import a couple additional packages called rtree and spatialindex to support operations in GeoPandas. The relationship between all these different packages, libraries, etc. is called "dependencies" and often times just debugging your dependencies can require some time and effort. Luckily, we've already done that for you!
 
-Although pandas is already installed in the Google Colab environment, we will need to install the more specific GIS packages. In order to bring these geospatial-specific packages into Google’s environment, install them by running the following code (note that this may take a few moments and that you'll likely see lots of update messages).
+Although Pandas is already installed in the Google Colab environment, we will need to install the more specific GIS packages. In order to bring these geospatial-specific packages into Google’s environment, install them by running the following code (note that this may take a few moments and that you'll likely see lots of update messages).
 
-Also note that we're using `import ... as` to simplify the name. So `pandas` will be referred to as `pd` in our code... this is just a way to simplify and shorten things. On to the code:
+Also note that we're using `import ... as` to simplify the name. So `pandas` will be referred to as `pd` in our code... this is just a way to simplify and shorten things. We'll also be using `from` to grab specific parts of different packages. Find more information on importing packages to Python on this [nice, succinct, blog post](https://medium.com/code-85/a-beginners-guide-to-importing-in-python-bb3adbbacc2b). On to the code:
 ```python
 # Add gis packages to colab environment
 !pip install geopandas

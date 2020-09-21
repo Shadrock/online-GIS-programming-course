@@ -62,7 +62,7 @@ root_path = 'gdrive/My Drive/gis/' # set root path to folder where you uploaded 
 ```
 Now we can import our data files. Only the PUDs shapefile has geographic properties that can be interpreted by GeoPandas. Mirroring pandas’s `.read_csv()` method, GeoPandas’ `.read_file()` function requires the filepath to the `.shp` file. Then we need to initialize geographic properties using the standard crs that we discussed previously.
 
-In the code below, the PUDs shapefile component is being read in as a GeoDataFrame while the two csv files are read in as standard pandas DataFrames. **Be aware that there may be character differences between your filenames and what is encoded below! Double check (or copy/paste) your file names if you get an error.**
+In the code below, the PUDs shapefile component is being read in as a [GeoDataFrame](https://geopandas.org/reference/geopandas.GeoDataFrame.html) while the two csv files are read in as standard pandas DataFrames. **Be aware that there may be character differences between your filenames and what is encoded below! Double check (or copy/paste) your file names if you get an error.**
 ```python
 # Read in PUDs file as a geodataframe and initialize coordinate reference system (CRS)
 puds = gpd.read_file(root_path+'input/Planned_Unit_Development__PUDs.shp', crs = {'init' :'epsg:4326'})

@@ -26,7 +26,7 @@ Once you have downloaded the data, you will need to upload it to your Google Dri
 - Within the input folder, upload the `Affordable_Housing.csv` as well as all the files from inside the Planned Unit Development folder, after unzipping it
 
 It’s important that you **use these exact naming conventions and organization system or that you make the required updates to the import/export statements during the code-along.**
-You will also need a crosswalk made for this activity. You can get that file in this repo (called `zoning_crosswalk.csv` — then upload the csv to your `input` folder in Drive as well. A [crosswalk](https://en.wikipedia.org/wiki/Schema_crosswalk) is a table that shows equivalent elements (or "attributes") in more than one database schema. It maps the elements in one schema to the equivalent elements in another.
+You will also need a crosswalk made for this activity. You can get that file in this repo (called `zoning_crosswalk.csv`) — then upload it to your `input` folder in Drive as well. A [crosswalk](https://en.wikipedia.org/wiki/Schema_crosswalk) is a table that shows equivalent elements (or "attributes") in more than one database schema. It maps the elements in one schema to the equivalent elements in another.
 
 ## Translating Maps to Tables
 We’ll import each layer in our dataset with an initialization of its coordinate reference system (CRS). This set of numbers (e.g. `epsg:4326`) comprises a standard coordinate frame for the Earth — explaining how points in space relate to each other. We will be looking at the physical location of buildings, expressed in longitude and latitude, as well as their location within the political borders of Washington, DC based on EPSG’s standard 4326 CRS.

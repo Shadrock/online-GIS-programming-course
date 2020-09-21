@@ -29,7 +29,7 @@ It’s important that you **use these exact naming conventions and organization 
 You will also need a crosswalk made for this activity. You can get that file in this repo (called `zoning_crosswalk.csv`) — then upload it to your `input` folder in Drive as well. A [crosswalk](https://en.wikipedia.org/wiki/Schema_crosswalk) is a table that shows equivalent elements (or "attributes") in more than one database schema. It maps the elements in one schema to the equivalent elements in another.
 
 ## Translating Maps to Tables
-We’ll import each layer in our dataset with an initialization of its coordinate reference system (CRS). This set of numbers (e.g. `epsg:4326`) comprises a standard coordinate frame for the Earth — explaining how points in space relate to each other. We will be looking at the physical location of buildings, expressed in longitude and latitude, as well as their location within the political borders of Washington, DC based on EPSG’s standard 4326 CRS.
+We’ll import each layer in our dataset with an initialization of its coordinate reference system (CRS). This set of numbers (e.g. `epsg:4326`) comprises a standard coordinate frame for the Earth — explaining how points in space relate to each other. We will be looking at the physical location of buildings, expressed in longitude and latitude, as well as their location within the political borders of Washington, DC based on [EPSG’s standard 4326 CRS](https://spatialreference.org/ref/epsg/wgs-84/).
 
 We're going to use a popular [Python package called Pandas](https://pandas.pydata.org/). Some people have referred to Pandas as "basically Excel for Python". You can structure your data as rows and columns and perform operations with similar functionality to those of Excel.
 

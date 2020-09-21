@@ -1,13 +1,17 @@
 # Creating Zoning Maps Using Python & Pandas
-From https://towardsdatascience.com/walkthrough-mapping-gis-data-in-python-92c77cd2b87a
+By following this tutorial, you’ll learn to navigate geographic shapefiles in a Jupyter Notebook (we'll be using Colab). You will upload data from DC’s open data portal, and then concatenate datasets and conduct some basic analysis. Finally, you'll create a basic map, and create a new `.shp` file that can be used with ESRI products... or can be uploaded to [Carto](https://www.carto.com/)! 
+![Shadrock's cool map](images/Carto_ouput.png)
+Check out a live version of [my finished product here](https://shadrock.carto.com/builder/df4c5d9f-1c1e-4df4-bb15-42681ba14aac/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B38.838460360929645%2C-77.21660658717157%5D%2C%22sw%22%3A%5B39.03127554305828%2C-76.8502812087536%5D%2C%22center%22%3A%5B38.93493348047009%2C-77.03344389796258%5D%2C%22zoom%22%3A12%7D%7D). 
 
-Her original data (different than mine) at: https://drive.google.com/drive/folders/1wYC9o4W_7zGoctpOGQtdIWqmyPp0gSKR
+### To complete this assignment you will need:
+- A Google account. We'll be using Colab, but also space in your Google Drive: this will be nice example of hosting a small data science project with your own services.
+- Data downloaded from [OpenData D.C.](https://opendata.dc.gov/). If, for some reason you can't access the site or download the data, there is a [data folder in this repo](data) that contains archived data you could use. 
+- A free student account on Carto. You get _only_ get one of these by authenticating with your [Github Student Developer pack](https://education.github.com/pack) (pretty nifty, eh?). [Go here for details links](https://carto.com/help/getting-started/student-accounts/): the process shouldn't take long. Note that a normal, free, Github account will not work!
 
-Her Colab file: https://colab.research.google.com/drive/1y-v4PoOOFtk8OOdJJOa_VkMumNKMMvQ8#scrollTo=S6w-As3IqWif
+### What you will submit:
+A link to your Github repo. The repo must contain your Python code (either as script in `.py` or a notebook in `.ipynb` format). The `README` of your repo should briefly summarize the project (in your own words), show an image of your final output, *and* link to your final map in Carto. You do not need to include the input/output files (as I have here) but it might be a good idea if you want to use this repo as part of your portfolio. 
 
-By following this tutorial, you’ll learn to navigate geographic shapefiles in a Jupyter Notebook (we'll be using Colab). You will upload data from DC’s open data portal, and then concatenate datasets and conduct some basic analysis. Finally, you'll create a basic map, and create a new `.shp` file that can be used with ESRI products... or can be uploaded into [Carto](https://www.tableau.com/)! Check out [my finished product here](https://shadrock.carto.com/builder/df4c5d9f-1c1e-4df4-bb15-42681ba14aac/embed?state=%7B%22map%22%3A%7B%22ne%22%3A%5B38.838460360929645%2C-77.21660658717157%5D%2C%22sw%22%3A%5B39.03127554305828%2C-76.8502812087536%5D%2C%22center%22%3A%5B38.93493348047009%2C-77.03344389796258%5D%2C%22zoom%22%3A12%7D%7D). 
-
-## Why is this important? 
+## Why is this lab important? 
 The United States is facing a housing crisis: the cost of housing has skyrocketed and wages have not kept pace: housing instability threatens 11 million Americans. One, little understood, aspect of the housing crisis is evictions. The [Eviction Lab](https://evictionlab.org/) is studying this to try and understand the phenomenon, which is potentially even [more devestating during the current pandemic](https://www.forbes.com/sites/samchandan/2020/07/25/americas-next-housing-crisis-how-the-pandemic-is-pushing-renters-to-the-brink/#2a98d7bd1527), and which is is [starkly impacted by race and income](https://www.urban.org/urban-wire/new-data-suggest-covid-19-widening-housing-disparities-race-and-income). The Eviction Lab built the *first* nationwide database of evictions only *recently*. This is amazing when you consider it: there was no data available! Remember this in any humanitarian program you are part of: if it isn't measured, it isn't managed. How can you manage something you don't know exists!
 
 One way to study eviction is to look at how cities handle [zoning](https://www.smgov.net/Departments/PCD/Zoning/What-is-Zoning/), the laws which govern how land can be used. Gentrification, the process of renovating and improving an area to attract wealthier residents, can cause displacement or current residents, but can potentially also unlock economic opportunity. The city of Washington D.C., is using "Planned Unit Developments", in an attempt to broadly redistribute the benefits of urban redevelopment by offering amenities such as affordable housing, improved public transportation, and in exchange for zoning exemptions. However, this will need to be studied over the long term to see if it works. For example, Planned Unit Developments, even those offering affordable housing as part of their community benefit package, could still contribute to higher eviction rates in anticipation of the appreciation of land values. 
@@ -143,9 +147,18 @@ puds_info.to_file('puds_info.shp')
 !cp puds_info.shp 'gdrive/My Drive/gis/output'
 !cp puds_info.shx 'gdrive/My Drive/gis/output'
 ```
-
 Check your folder in drive to see that you have all the components of a shapefile!
 
+# Creating a Finished Product with Carto
+- Uploading your data to Carto will require formatting your `.shp` file _as a `.zip` file_. Fortunately, you can do this very easily by downloading your entire `outputs` folder from your Google Drive, which will automatically create a `.zip` file. [see more info importing files on the Carto site here](https://carto.com/developers/import-api/guides/importing-geospatial-data/#supported-geospatial-data-formats)). 
+- Sign in to Cartoi in with your Github account (remember, you *must* have signed up for Githubs student developer pack to use Carto: using a regular free Github account will not work). 
+- Once you sign in you will be taken to your Carto dashboard (the URL will look something like `https://yourusername.carto.com/dashboard` for the button to create a new map. The process is pretty intuitive, but if you've never used Carto, [start here with a walk through about how to upload new data](https://carto.com/help/tutorials/getting-started-with-carto-builder/).
+- When you create a new map, you’ll be taken to the map “Builder” to edit your map! Have fun playing around with different basemaps, stylings for your polygons, etc. There's a lot of good documentation and tutorials about using map builder online ([start with Carto's documentation here](https://carto.com/help/tutorials/using-builder/)), but it's fairly straight forward to learn and you don't need to code anything: you can do it all via browser using the dashboard. 
+- To symbolize your polygons by category, change the polygon style to show `zone_cat`. 
+- Make sure you add/update a legend that helps viewers understand what the colors of your polygons mean. 
+- Publish, Update, and share your maps! ([More details on this at Carto](https://carto.com/help/tutorials/publishing-and-sharing-maps/)). And don't forget to link your final `README` to your online map!
 
+# Citation
+This tutorial was originally created by [Nicole Janeway Bills](https://twitter.com/nicole_janeway), who provides a nice [video walkthrough on YouTube here](https://www.youtube.com/watch?v=b9G2T4CPYVM&feature=emb_logo). I've changed some of the code slightly to deal with different inputs (Open Data D.C.'s file formatting has changed since the original tutorial); added more background context on the scenario, and added the use of Carto for a final output. 
 
 

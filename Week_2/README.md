@@ -72,19 +72,23 @@ puds = gpd.read_file(root_path+'input/Planned_Unit_Development__PUDs.shp', crs =
 aff = pd.read_csv(root_path+'input/Affordable_Housing.csv')
 crosswalk = pd.read_csv(root_path+'input/zoning_crosswalk.csv')
 ```
-In terms of quickly examining the datasets, trying running `info()` and `.sample()` methods on each DataFrame. 
+In terms of quickly examining the datasets, trying running `info()` and `.sample()` methods on each DataFrame. This helps you get familiar with what's in the data and ensures that you've read in the files correctly.  
 ```python
 # Running this code grabs rows from the first 3 index places (4 rows total!)
 puds.sample(3)
 ```
+![Sample output](images/info_sample_methods.png)
 ```python
 # This gives you a summary of what is within the Affordable housing .csv
 aff.info()
 ```
+![Sample output](images/aff_info.png)
 ```python
 # This gives you a summary of what is within the PUD .shp file
 puds.info()
 ```
+![Sample output](images/puds_info.png)
+
 In the above code, notice that the last column is `geometry`. This contains the vectors of the polygons representing the exterior of the zoning exempted buildings.
 
 Next, let’s turn the Affordable Housing csv into a GeoDataFrame. We’ll do this by wrapping the longitude (‘X’) and latitude (‘Y’) in a Shapely POINT object, as follows:
@@ -97,6 +101,8 @@ Now when we `.sample()` the dataframe, you’ll see a `geometry` column (scroll 
 ```python
 aff.sample(1) #sampling to the first index... or row headers and one row.
 ```
+![Sample output](images/aff_sample.png)
+
 Now merge the datasets based on their geographic intersection:
 ```python
 # Use geospatial join to identify which PUDs include affordable housing projects
@@ -107,6 +113,8 @@ then
 # Check our Merge - incremental development, we're checking as we go!
 puds_aff.info()
 ```
+![Sample output](images/puds_aff_info.png)
+
 Now we have one master GeoDataFrame containing the information about zoning exemptions as well as affordable housing projects at the same geographic locations. Because we left-joined with the puds dataframe as the left table, the resulting geo-dataframe maintains the puds’ `geometry` column and drops the aff dataframe `geometry` column from the table.
 
 As a final step — we'll turn zoning codes into plain english, by merging with the zoning categories crosswalk. This will categorize zoning exempted buildings as Commercial, Residential, or Other/Mixed Use.
@@ -120,20 +128,22 @@ puds_info = puds_aff.merge(crosswalk[['Zone_Cat']], how='left', left_on='PUD_ZON
 print(f"Total count of PUDs: {puds_info.shape[0]}")
 print(f"Count PUDs offering Affordable Housing: {puds_info.loc[~puds_info.PROJECT_NAME.isna()].shape[0]}")
 ```
-Now let’s see how those PUDs fall into each zoning category. Creating a map on a GeoDataFrame can be done with a single line of code using the `.plot()` function. The resulting map will show zoning exemptions within Washington, DC colored by type.
 
+Now let’s see how those PUDs fall into each zoning category. Creating a map on a GeoDataFrame can be done with a single line of code using the `.plot()` function. The resulting map will show zoning exemptions within Washington, DC colored by type.
 ```python
 # Create a map of PUDs by Zoning Category
 puds_info.plot(column='Zone_Cat', legend=True, figsize=(16,8));
 ```
-Let’s take a look at one more — this time the location of zoning exempted buildings that provide affordable housing units.
+![Sample output](images/puds_info_plot.png)
 
+Let’s take a look at one more — this time the location of zoning exempted buildings that provide affordable housing units.
 ```python
 # Create a map of just the PUDs that provide Affordable Housing
 puds_info[puds_info['TOTAL_AFFORDABLE_UNITS']>0].plot(column='TOTAL_AFFORDABLE_UNITS', color='grey', figsize=(16,8));
 ```
+![Sample output](images/affordable_units.png)
 
-Woot: we now have a map! But let's not stop there... this is, admittedly, not the best map in the world. So let's output our new data into a `.shp` file using the following code: 
+Woot: we now have a map! But let's not stop there... this is, admittedly, not the best map in the world. We may want to share our map more widely in a sleek online format... So let's output our new data into a `.shp` file using the following code: 
 
 ```python
 # Export geodataframe as shapefile within Colab environment

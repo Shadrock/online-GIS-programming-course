@@ -21,7 +21,7 @@ I recommend instructors survey their students before class to ensure their compu
 
 ## Contents & Delivery of Activities
 
-There are six folders in this repository labeled in chronological order according to the week in which they are delivered (e.g. `Week_1`). I release each lab as a stand-alone Github repository that students clone or fork into their personal Github account from which to work. Lab repositories contain instructions for completion in the `README` file. Some labs are accompanied by a starter `.py` files, data files, or other associated content, while other labs contain only the readme file. 
+There are six folders in this repository labeled in chronological order according to the week in which they are delivered (e.g. `Week_1`). I release each lab as a stand-alone Github repository that students clone or fork into their personal Github account from which to work. Lab repositories contain instructions for completion in the `README` file. Some labs are accompanied by a starter `.py` files, data files, or other associated content, while other labs contain only the readme file. All labs also contain a `.ipynb` file (from Google Colab) that contains potential answers to the coding challenges presented in each lab. 
 
 To submit labs students edit the `README` files to answer basic questions about the labs or share their thoughts, ensure their well-commented `.py` or `.ipynb` file is in the repo, and submit a link to the repo. In some classes I’ve used [Github Classroom](https://classroom.github.com) to manage this, which doesn't require a URL submission. The lab folders in this repo contain sample solutions in an Colab notebook.
 

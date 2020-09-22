@@ -101,7 +101,7 @@ aff = gpd.GeoDataFrame(aff, crs={'init' :'epsg:4326'})
 ```
 Now when we `.sample()` the dataframe, you’ll see a `geometry` column (scroll to the far right ot see it) containing a POINT object for each record. `.info()` confirms the data type has transformed into a GeoDataFrame.
 ```python
-aff.sample(1) #sampling to the first index... or row headers and one row.
+aff.sample(1) #sampling to the first index... or column headers and one row.
 ```
 > ![Sample output](images/aff_sample.png)
 

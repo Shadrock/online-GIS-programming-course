@@ -7,6 +7,8 @@ By following this tutorial, you’ll learn to navigate geographic shapefiles in 
 - Data downloaded from [OpenData D.C.](https://opendata.dc.gov/). If, for some reason you can't access the site or download the data, there is a [data folder in this repo](data) that contains archived data you could use. That being said, I want you to use the most recent data you can get!
 - A free student account on Carto. You can _only_ get one of these by authenticating with your [Github Student Developer pack](https://education.github.com/pack) (pretty nifty, eh?). [Go here for details and links](https://carto.com/help/getting-started/student-accounts/): the process shouldn't take long. Note that a normal, free, Github account will not work!
 
+Note that, in the tutorial below, I have included screenshots of what your output should look like. You will not always have the exact same output (especially because you're using the most recent data) but they should give you a sense of what your code should produce. In some cases, your code will simply produce a notifcation that something has run, or the result of a print statement: I have not included screenshots for these. 
+
 ### What you will submit:
 A link to your Github repo. The repo must contain your Python code (either as script in `.py` or a notebook in `.ipynb` format). The `README` of your repo should briefly summarize the project (in your own words), show an image of your final output, *and* link to your final map in Carto. You do not need to include the input/output files (as I have here) but it might be a good idea if you want to use this repo as part of your portfolio. 
 
@@ -77,17 +79,17 @@ In terms of quickly examining the datasets, trying running `info()` and `.sample
 # Running this code grabs rows from the first 3 index places (4 rows total!)
 puds.sample(3)
 ```
-![Sample output](images/info_sample_methods.png)
+> ![Sample output](images/info_sample_methods.png)
 ```python
 # This gives you a summary of what is within the Affordable housing .csv
 aff.info()
 ```
-![Sample output](images/aff_info.png)
+> ![Sample output](images/aff_info.png)
 ```python
 # This gives you a summary of what is within the PUD .shp file
 puds.info()
 ```
-![Sample output](images/puds_info.png)
+> ![Sample output](images/puds_info.png)
 
 In the above code, notice that the last column is `geometry`. This contains the vectors of the polygons representing the exterior of the zoning exempted buildings.
 
@@ -101,7 +103,7 @@ Now when we `.sample()` the dataframe, you’ll see a `geometry` column (scroll 
 ```python
 aff.sample(1) #sampling to the first index... or row headers and one row.
 ```
-![Sample output](images/aff_sample.png)
+> ![Sample output](images/aff_sample.png)
 
 Now merge the datasets based on their geographic intersection:
 ```python
@@ -113,7 +115,7 @@ then
 # Check our Merge - incremental development, we're checking as we go!
 puds_aff.info()
 ```
-![Sample output](images/puds_aff_info.png)
+> ![Sample output](images/puds_aff_info.png)
 
 Now we have one master GeoDataFrame containing the information about zoning exemptions as well as affordable housing projects at the same geographic locations. Because we left-joined with the puds dataframe as the left table, the resulting geo-dataframe maintains the puds’ `geometry` column and drops the aff dataframe `geometry` column from the table.
 
@@ -134,14 +136,14 @@ Now let’s see how those PUDs fall into each zoning category. Creating a map on
 # Create a map of PUDs by Zoning Category
 puds_info.plot(column='Zone_Cat', legend=True, figsize=(16,8));
 ```
-![Sample output](images/puds_info_plot.png)
+> ![Sample output](images/puds_info_plot.png)
 
 Let’s take a look at one more — this time the location of zoning exempted buildings that provide affordable housing units.
 ```python
 # Create a map of just the PUDs that provide Affordable Housing
 puds_info[puds_info['TOTAL_AFFORDABLE_UNITS']>0].plot(column='TOTAL_AFFORDABLE_UNITS', color='grey', figsize=(16,8));
 ```
-![Sample output](images/affordable_units.png)
+> ![Sample output](images/affordable_units.png)
 
 Woot: we now have a map! But let's not stop there... this is, admittedly, not the best map in the world. We may want to share our map more widely in a sleek online format... So let's output our new data into a `.shp` file using the following code: 
 
@@ -156,7 +158,7 @@ puds_info.to_file('puds_info.shp')
 !cp puds_info.shp 'gdrive/My Drive/gis/output'
 !cp puds_info.shx 'gdrive/My Drive/gis/output'
 ```
-Check your folder in drive to see that you have all the components of a shapefile!
+Check your `output` folder in your Google Drive to see that you have all the components of a shapefile!
 
 # Creating a Finished Product with Carto
 - Uploading your data to Carto will require formatting your `.shp` file _as a `.zip` file_. Fortunately, you can do this very easily by downloading your entire `outputs` folder from your Google Drive, which will automatically create a `.zip` file ([see more info importing files on the Carto site here](https://carto.com/developers/import-api/guides/importing-geospatial-data/#supported-geospatial-data-formats)). 

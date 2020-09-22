@@ -1,6 +1,6 @@
 # Online GIS Programming Course Materials
 This repo contains labs, and other materials for a six-week introductory GIS programming course. This course can be delivered entirely online. The course builds on my **six-week, introduction to Python course.** By the end of these activities, students should:
-- have an intermediate understanding of Python, including manipulating a variety of file formats (I emphasize `.csv`), concatentating data, and presenting using various libraries to create basic analytic or graphical outputs (including finishing outputs using tools such as [Carto](https://carto.com/) or [Tableau](https://www.tableau.com/));
+- have an intermediate understanding of Python, including manipulating a variety of file formats (I emphasize `.csv`), concatentating data, and using various libraries to create basic analytic or graphical outputs (including finishing outputs using tools such as [Carto](https://carto.com/) or [Tableau](https://www.tableau.com/));
 - demonstrate proficiency creating a range of different scripts; and
 - have online examples the show their ability to navigate, comment on, document, and share code.
 

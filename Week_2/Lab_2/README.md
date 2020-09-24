@@ -22,8 +22,10 @@ _Can we categorize and visualize buildings that received a zoning exemption in W
 
 ## Data from Open Data DC!
 The data for this exercise comes from DC’s open data portal, specifically [their page on Planned Unit Developments](https://opendata.dc.gov/datasets/planned-unit-development-puds). Isn't it great that they are supplying open data? From the PUDs page, download the shapefile from the dropdown options. You'll need to unzip the folder and add all the different files that make up a `.shp` file to your Drive.
+> ![Downloading PUD data](images/PUDs_data_download.png)
 
 Now navigate to the portal's [Affordable Housing page](https://opendata.dc.gov/datasets/affordable-housing), and download the _spreadsheet_ (not the shapefile!). For the purposes of this exercise, we'll walk through the process of taking a common data file like a `.csv` and giving it special geospatial properties. Normally, you'd just download spatial data, but `.csv` is an incredibly widespread data format and it is **not uncommon** to have to concatenate files to add the spatial data you need the attribute data you need.
+> ![Downloading Aff Housing data](images/Aff_data_download.png)
 
 Once you have downloaded the data, you will need to upload it to your Google Drive. To facilitate easy access to data during the code-along, set up the following file structure:
 - From your My Drive folder create a folder called `gis`

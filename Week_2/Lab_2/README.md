@@ -22,8 +22,10 @@ _Can we categorize and visualize buildings that received a zoning exemption in W
 
 ## Data from Open Data DC!
 The data for this exercise comes from DC’s open data portal, specifically [their page on Planned Unit Developments](https://opendata.dc.gov/datasets/planned-unit-development-puds). Isn't it great that they are supplying open data? From the PUDs page, download the shapefile from the dropdown options. You'll need to unzip the folder and add all the different files that make up a `.shp` file to your Drive.
+> ![Downloading PUD data](images/PUDs_data_download.png)
 
-Now navigate to the portal's [Affordable Housing page](https://opendata.dc.gov/datasets/affordable-housing), and download the _spreadsheet_ (not the shapefile!). For the purposes of this exercise, we'll walk through the process of taking a common data file like a `.csv` and giving it special geospatial properties. Normally, you'd just download spatial data, but `.csv` is an incredibly widespread data format and it is **not uncommon** to have to concatenate files to add the spatial data you need the attribute data you need.
+Now navigate to the portal's [Affordable Housing page](https://opendata.dc.gov/datasets/affordable-housing), and download the **_spreadsheet_** (_not the shapefile!_). For the purposes of this exercise, we'll walk through the process of taking a common data file like a `.csv` and giving it spatial attributes. Normally, you'd just download spatial data, but `.csv` is an incredibly widespread data format and it is **not uncommon** to have to concatenate files to add the spatial data you need the attribute data you need.
+> ![Downloading Aff Housing data](images/Aff_data_download.png)
 
 Once you have downloaded the data, you will need to upload it to your Google Drive. To facilitate easy access to data during the code-along, set up the following file structure:
 - From your My Drive folder create a folder called `gis`
@@ -161,7 +163,7 @@ puds_info.to_file('puds_info.shp')
 Check your `output` folder in your Google Drive to see that you have all the components of a shapefile!
 
 # Creating a Finished Product with Carto
-Now that you have a `.shp` file, you could continue your analysis or map-making using ESRI software (including ArcGIS.com), or anything else, really. However, I want you exploring as many different tools as you can, so we'll finish our map using Carto: a relatively easy-to-use online platform.
+Now that you have a `.shp` file, you could continue your analysis or map-making using ESRI software (including ArcGIS.com), or anything else, really. However, I want you exploring as many different tools as you can, so we'll finish our map using [Carto](https://carto.com/); a relatively easy-to-use online platform for mapping and spatial analysis.
 - Uploading your data to Carto will require formatting your `.shp` file _as a `.zip` file_. Fortunately, you can do this very easily by downloading your entire `outputs` folder from your Google Drive, which will automatically create a `.zip` file ([see more info importing files on the Carto site here](https://carto.com/developers/import-api/guides/importing-geospatial-data/#supported-geospatial-data-formats)).
 - Sign in to Carto in with your Github account (remember, you *must* have signed up for Github's student developer pack to use Carto: using a regular free Github account will not work). 
 - Once you sign in you will be taken to your Carto dashboard (the URL will look something like `https://yourusername.carto.com/dashboard` for the button to create a new map. The process is pretty intuitive, but if you've never used Carto, [start here with a walk through about how to upload new data](https://carto.com/help/tutorials/getting-started-with-carto-builder/).

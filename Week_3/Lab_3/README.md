@@ -12,10 +12,10 @@ A link to your Github repo. The repo must contain... **list what is needed.**
 ## Why is this lab important?
 Briefly explain the concept behind the lab. Is it technical, e.g. concatenating spreadsheets, or is it substantive, using Covid Data... 
 
-## Getting the Data
+# Getting the Data
 Provide detailed instructions for what data to download, any code required to do this, and where the data should be placed (e.g. in a particular directory or imported to Colab)..
 
-## Write Tutorial Here
+# Write Tutorial Here
 Write instructions / tutorial steps here. 
 
 If you need to use code blocks, here is how to format them:

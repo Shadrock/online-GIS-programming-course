@@ -24,10 +24,10 @@ If you need to use code blocks, here is how to format them:
 import ...
 
 ```
-Add mor instructions as needed! You can add images by putting them in the `images` folder and linking them like this: 
+Add more instructions as needed! You can add images by putting them in the `images` folder and linking them like this: 
 ![An Image of Marx](images/Marxxx.png)
 
-Add mor instructions as needed! 
+Add more instructions as needed! 
 
 # Creating a Finished Product with Carto
 Explain what their output should be (e.g. GeoJSON, a CSV, a Shapefile) and then link to the service we want to use for finishing (e.g. Tableau). Be sure to link to a tutorial or instructions about uploading the files to that service. For example...

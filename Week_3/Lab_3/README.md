@@ -9,13 +9,17 @@ Briefly explain the tutorial and link to any available external outputs, such as
 - A Google account or you can work on Jupyter Notebook using Anaconda. We'll be using Colab or Jupyter Notebook, but also space in your Google Drive: this will be nice example of hosting a small data science project with your own services.
 
 - You need to downloaded data from https://www.kaggle.com/sudalairajkumar/covid19-in-usa
-- A free student account on Carto, Tableau... etc. 
+- A free student account on: 
 
-For Tableau - https://www.tableau.com/academic/students
-For Carto - https://carto.com/help/getting-started/student-accounts/
+Tableau - https://www.tableau.com/academic/students
+
+or
+
+Carto - https://carto.com/help/getting-started/student-accounts/
 
 ### What you will submit:
-A link to your Github repo. The repo must contain the script with filtered state and Tableau / Carto Map. 
+
+A link to your Github repo. The repo must contain the script with filtered state and Tableau / Carto Map image. 
 
 ## Why is this lab important?
 In this lab we will be learning how to groupby, sort and export data using Python and how to plot on Tableau / Carto with the help of county name.
@@ -25,27 +29,32 @@ You need to download data from Kaggle (you need to create a free account on Kagg
 # Tutorial
 
 ### Python Script: 
-***Challenge 1:*** Filter minimum of three (3) states in the file exercise.py to export data of three states.
+***Challenge 1:*** Filter minimum of three (3) states in the file exercise.py to export data of three states in .csv format.
 
 Step 1 - You need to update the exercise.py with desired states that you want to use by putting them in filter and exporting the data accordingly.  
-Step 2 - The file you recieve should be saved as in Excel Workbook format. 
+Step 2 - The file you recieve should be first downloaded / saved and later on coverted in Excel Workbook format by going to **File -> Save As -> File Format** and choosing Excel Workbook (.xlsx) format in Microsoft Excel. 
 
 ### Tableau plot:
+
 ***Challenge 2:*** Plot the map on Tableau using County and States in the exported excel workbook file.
 
-Step 1 - Open Tableau
+Step 1 - Install and Open Tableau
 
-Step 2 - Upload the data by click on Excel on the left
+Step 2 - Upload the data by clicking on **Microsoft Excel** on the left.
 
 Step 3 - In the bottom left, click on Sheet 1.
 
-Step 4 - Drag the County column on the left in Details within Marks.
+Step 4 - Drag the County column on the left in Details within **Marks**.
 
-Step 5 - Drag the County column and Cases in Label.
+Step 5 - On the right top-most click on **Show Me**.
 
-Step 6 - Zoom according to the states you have selected.
+Step 6 - Drag the County column and Cases in **Label**.
 
-Step 7 - Right click on the map and click on Cpoy and then Image and click on Copy. Once you will copy it you can save it anywhere either on Word, Paint or directly on Github using the Paste option or Command + V (for Mac) and Ctrl + V (for Windows).
+Step 7 - Zoom according to the states you have selected.
+
+Step 7 - Right click on the map and click on Copy and then Image and click on Copy in the dialog box that will appear. Once you will copy it you can save it anywhere either on Word, Paint or directly paste on Github using the Paste option or Command + V (for Mac) or Ctrl + V (for Windows).
+
+***Feel free to search on the internet or anywhere!***
 
 ### Creating a Finished Product with Carto
 Explain what their output should be (e.g. GeoJSON, a CSV, a Shapefile) and then link to the service we want to use for finishing (e.g. Tableau). Be sure to link to a tutorial or instructions about uploading the files to that service. For example...

@@ -15,7 +15,7 @@ For Tableau - https://www.tableau.com/academic/students
 For Carto - https://carto.com/help/getting-started/student-accounts/
 
 ### What you will submit:
-A link to your Github repo. The repo must contain... **list what is needed.**
+A link to your Github repo. The repo must contain the script with filtered state and Tableau / Carto Map. 
 
 ## Why is this lab important?
 In this lab we will be learning how to groupby, sort and export data using Python and how to plot on Tableau / Carto with the help of county name.

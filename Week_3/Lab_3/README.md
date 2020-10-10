@@ -34,11 +34,17 @@ Step 2 - The file you recieve should be saved as in Excel Workbook format.
 ***Challenge 2:*** Plot the map on Tableau using County and States in the exported excel workbook file.
 
 Step 1 - Open Tableau
+
 Step 2 - Upload the data by click on Excel on the left
+
 Step 3 - In the bottom left, click on Sheet 1.
+
 Step 4 - Drag the County column on the left in Details within Marks.
+
 Step 5 - Drag the County column and Cases in Label.
+
 Step 6 - Zoom according to the states you have selected.
+
 Step 7 - Right click on the map and click on Cpoy and then Image and click on Copy. Once you will copy it you can save it anywhere either on Word, Paint or directly on Github using the Paste option or Command + V (for Mac) and Ctrl + V (for Windows).
 
 ### Creating a Finished Product with Carto

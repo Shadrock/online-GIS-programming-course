@@ -1,7 +1,6 @@
-# Lab 3 Data Sorting and Plotting
+# Lab 3 Data Sorting and Geographical Plotting using Geocoding
 
 In this lab we will be working to sort the COVID-19 cases in the United States and plotting them on Tableau for atleast 3 states.
-
 
 Briefly explain the tutorial and link to any available external outputs, such as a Tableau map.   
 
@@ -9,6 +8,7 @@ Briefly explain the tutorial and link to any available external outputs, such as
 - A Google account or you can work on Jupyter Notebook using Anaconda. We'll be using Colab or Jupyter Notebook, but also space in your Google Drive: this will be nice example of hosting a small data science project with your own services.
 
 - You need to downloaded data from https://www.kaggle.com/sudalairajkumar/covid19-in-usa
+
 - A free student account on: 
 
 Tableau - https://www.tableau.com/academic/students
@@ -19,7 +19,7 @@ Carto - https://carto.com/help/getting-started/student-accounts/
 
 ### What you will submit:
 
-A link to your Github repo. The repo must contain the script with filtered state and Tableau / Carto Map image containing county names and number of cases in each of the county within the image. 
+A link to your Github repo. The repo must contain the script with minimum three (3) filtered states, exported csv file and Tableau / Carto Map image containing county names and number of cases in each of the county within the image. 
 
 ## Why is this lab important?
 In this lab we will be learning how to groupby, sort and export data using Python and how to plot on Tableau / Carto with the help of county name.
@@ -30,14 +30,14 @@ You need to download data from Kaggle (by creating a free account on Kaggle to d
 # Tutorial
 
 ### Python Script: 
-***Challenge 1:*** Filter minimum of three (3) states in the file exercise.py to export data of three states in .csv format.
+***Challenge 1:*** Filter minimum of three (3) states in the file exercise.py to export data of three states in .csv format. Submit the updated exercise.py file and the exported csv file.
 
 Step 1 - You need to update the exercise.py with desired states that you want to use by putting them in filter and exporting the data accordingly.  
 Step 2 - The file you recieve should be first downloaded / saved and later on coverted in Excel Workbook format by going to **File -> Save As -> File Format** and choosing Excel Workbook (.xlsx) format in Microsoft Excel. 
 
 ### Tableau plot:
 
-***Challenge 2:*** Plot the map on Tableau using County and States in the exported excel workbook file.
+***Challenge 2:*** Plot the map on Tableau using County and States in the exported excel workbook file. Submit the image file with county names and number of cases in that county.
 
 Step 1 - Install and Open Tableau
 

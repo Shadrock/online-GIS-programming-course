@@ -25,10 +25,13 @@ You need to download data from Kaggle (you need to create a free account on Kagg
 # Tutorial
 
 ### Python Script: 
+***Challenge 1:*** Filter minimum of three (3) states in the file exercise.py to export data of three states.
+
 Step 1 - You need to update the exercise.py with desired states that you want to use by putting them in filter and exporting the data accordingly.  
 Step 2 - The file you recieve should be saved as in Excel Workbook format. 
 
 ### Tableau plot:
+***Challenge 2:*** Plot the map on Tableau using County and States in the extracted file.
 
 Step 1 - Open Tableau
 Step 2 - Upload the data by click on Excel on the left

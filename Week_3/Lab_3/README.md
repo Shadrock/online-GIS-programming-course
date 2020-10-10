@@ -1,34 +1,42 @@
-# Lab 3 Title here!
+# Lab 3 Data Sorting and Plotting
+
+In this lab we will be working to sort the COVID-19 cases in the United States and plotting them on Tableau for atleast 3 states.
+
+
 Briefly explain the tutorial and link to any available external outputs, such as a Tableau map.   
 
 ### To complete this assignment you will need:
-- A Google account. We'll be using Colab, but also space in your Google Drive: this will be nice example of hosting a small data science project with your own services.
-- Data downloaded from .... **Provide links**
-- A free student account on Carto, Tableau... etc. **Provide links**
+- A Google account or you can work on Jupyter Notebook using Anaconda. We'll be using Colab or Jupyter Notebook, but also space in your Google Drive: this will be nice example of hosting a small data science project with your own services.
+
+- You need to downloaded data from https://www.kaggle.com/sudalairajkumar/covid19-in-usa
+- A free student account on Carto, Tableau... etc. 
+
+For Tableau - https://www.tableau.com/academic/students
+For Carto - https://carto.com/help/getting-started/student-accounts/
 
 ### What you will submit:
 A link to your Github repo. The repo must contain... **list what is needed.**
 
 ## Why is this lab important?
-Briefly explain the concept behind the lab. Is it technical, e.g. concatenating spreadsheets, or is it substantive, using Covid Data... 
+In this lab we will be learning how to groupby, sort and export data using Python and how to plot on Tableau / Carto with the help of county name.
 
 # Getting the Data
-Provide detailed instructions for what data to download, any code required to do this, and where the data should be placed (e.g. in a particular directory or imported to Colab)..
-
+You need to download data from Kaggle (you need to create a free account on Kaggle to download the data). You can download the data from here: https://www.kaggle.com/sudalairajkumar/covid19-in-usa.
 # Write Tutorial Here
-Write instructions / tutorial steps here. 
 
-If you need to use code blocks, here is how to format them:
-```python
-# Importing packages...
-import ...
+# Python Script: 
+Step 1 - You need to update the exercise.py with desired states that you want to use by putting them in filter and exporting the data accordingly.  
+Step 2 - The file you recieve should be saved as in Excel Workbook format. 
 
-```
-Add more instructions as needed! You can add images by putting them in the `images` folder and linking them like this: 
+# Tableau plot:
 
-![An Image of Marx](images/Marxxx.png)
-
-Add more instructions as needed! 
+Step 1 - Open Tableau
+Step 2 - Upload the data by click on Excel on the left
+Step 3 - In the bottom left, click on Sheet 1.
+Step 4 - Drag the County column on the left in Details within Marks.
+Step 5 - Drag the County column and Cases in Label.
+Step 6 - Zoom according to the states you have selected.
+Step 7 - Right click on the map and click on Cpoy and then Image and click on Copy. Once you will copy it you can save it anywhere either on Word, Paint or directly on Github using the Paste option or Command + V (for Mac) and Ctrl + V (for Windows).
 
 # Creating a Finished Product with Carto
 Explain what their output should be (e.g. GeoJSON, a CSV, a Shapefile) and then link to the service we want to use for finishing (e.g. Tableau). Be sure to link to a tutorial or instructions about uploading the files to that service. For example...

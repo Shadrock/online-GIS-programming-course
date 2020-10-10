@@ -51,7 +51,7 @@ Step 5 - On the right top-most click on **Show Me**.
 
 Step 6 - Drag the County column and Cases in **Label**.
 
-Step 7 - Zoom according to the states you have selected.
+Step 7 - Zoom according to the states you have selected.  
 
 Step 8 - Right click on the map and click on Copy and then Image and click on Copy in the dialog box that will appear. Once you will copy it you can save it anywhere either on Word, Paint or directly paste on Github using the Paste option or Command + V (for Mac) or Ctrl + V (for Windows).
 

@@ -22,7 +22,7 @@ In this lab we will be learning how to groupby, sort and export data using Pytho
 
 ## Getting the Data
 You need to download data from Kaggle (you need to create a free account on Kaggle to download the data). You can download the data from here: https://www.kaggle.com/sudalairajkumar/covid19-in-usa.
-# Write Tutorial Here
+# Tutorial
 
 ### Python Script: 
 Step 1 - You need to update the exercise.py with desired states that you want to use by putting them in filter and exporting the data accordingly.  

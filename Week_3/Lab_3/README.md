@@ -20,15 +20,15 @@ A link to your Github repo. The repo must contain... **list what is needed.**
 ## Why is this lab important?
 In this lab we will be learning how to groupby, sort and export data using Python and how to plot on Tableau / Carto with the help of county name.
 
-# Getting the Data
+## Getting the Data
 You need to download data from Kaggle (you need to create a free account on Kaggle to download the data). You can download the data from here: https://www.kaggle.com/sudalairajkumar/covid19-in-usa.
 # Write Tutorial Here
 
-# Python Script: 
+### Python Script: 
 Step 1 - You need to update the exercise.py with desired states that you want to use by putting them in filter and exporting the data accordingly.  
 Step 2 - The file you recieve should be saved as in Excel Workbook format. 
 
-# Tableau plot:
+### Tableau plot:
 
 Step 1 - Open Tableau
 Step 2 - Upload the data by click on Excel on the left
@@ -38,7 +38,7 @@ Step 5 - Drag the County column and Cases in Label.
 Step 6 - Zoom according to the states you have selected.
 Step 7 - Right click on the map and click on Cpoy and then Image and click on Copy. Once you will copy it you can save it anywhere either on Word, Paint or directly on Github using the Paste option or Command + V (for Mac) and Ctrl + V (for Windows).
 
-# Creating a Finished Product with Carto
+### Creating a Finished Product with Carto
 Explain what their output should be (e.g. GeoJSON, a CSV, a Shapefile) and then link to the service we want to use for finishing (e.g. Tableau). Be sure to link to a tutorial or instructions about uploading the files to that service. For example...
 - Uploading your data to Carto will require formatting your output in the following way... 
 - Sign in to Carto in with your Github account (remember, you *must* have signed up for Github's student developer pack to use Carto: using a regular free Github account will not work). 

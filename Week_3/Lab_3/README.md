@@ -31,7 +31,7 @@ Step 1 - You need to update the exercise.py with desired states that you want to
 Step 2 - The file you recieve should be saved as in Excel Workbook format. 
 
 ### Tableau plot:
-***Challenge 2:*** Plot the map on Tableau using County and States in the extracted file.
+***Challenge 2:*** Plot the map on Tableau using County and States in the exported excel workbook file.
 
 Step 1 - Open Tableau
 Step 2 - Upload the data by click on Excel on the left

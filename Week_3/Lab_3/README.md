@@ -19,13 +19,14 @@ Carto - https://carto.com/help/getting-started/student-accounts/
 
 ### What you will submit:
 
-A link to your Github repo. The repo must contain the script with filtered state and Tableau / Carto Map image containing county names and number of cases in each of the county. 
+A link to your Github repo. The repo must contain the script with filtered state and Tableau / Carto Map image containing county names and number of cases in each of the county within the image. 
 
 ## Why is this lab important?
 In this lab we will be learning how to groupby, sort and export data using Python and how to plot on Tableau / Carto with the help of county name.
 
 ## Getting the Data
-You need to download data from Kaggle (you need to create a free account on Kaggle to download the data). You can download the data from here: https://www.kaggle.com/sudalairajkumar/covid19-in-usa.
+You need to download data from Kaggle (by creating a free account on Kaggle to download the data): https://www.kaggle.com/sudalairajkumar/covid19-in-usa.
+
 # Tutorial
 
 ### Python Script: 

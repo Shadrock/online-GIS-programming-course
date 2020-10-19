@@ -24,20 +24,19 @@ var mask = ee.FeatureCollection('USDOS/LSIB_SIMPLE/2017')
 
 // Define the regional bounds of animation frames.
 
-/* This is where I replaced their coords by manually moving the bounding box and importing it back into my IDE. Final coords were
+/* 
+This is where I replaced their coords by manually moving the bounding box and importing it back into my IDE. Final coords were
 [33.29197999999998,-4.759076476892325]
 [42.64552000000002,-4.759076476892325]
 [42.64552000000002,5.377919576764253]
 [33.29197999999998,5.377919576764253]
 [33.29197999999998,-4.759076476892325] 
 translating back to code yields the following:
-
 var region = /* color: #d63000 */ee.Geometry.Polygon(
         [[[33.29197999999998, 5.377919576764253],
           [33.29197999999998, -4.759076476892325],
           [42.64552000000002, -4.759076476892325],
-          [42.64552000000002, 5.377919576764253]]], null, false);
-          
+          [42.64552000000002, 5.377919576764253]]], null, false);      
 So EITHER manually creat the bounding box for animation frames to match the country selected -OR- re-write the code to fit the box you want. 
 */
 

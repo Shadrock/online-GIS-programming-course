@@ -1,6 +1,6 @@
 /*This code loads the dsm and shows the user specified display of 0 and 500 from the data. This code uses "ALOS DSM: global 30m" V2_2 in the Earth Engine catalogue. Inspect the bands to ensure the data set includes the AVE_DSM band. This analysis does not change the data set: it's just a visualization. */
 
-//manual way to searched for DSM, which I normally have them import using the search bar
+//manual way to searched for DSM, which I normally have them import using the search bar. Either way, have them change "image" to dsm.
 var image = ee.Image('JAXA/ALOS/AW3D30_V2_2');
 
 // Explore the data in the console: how many bands do the data have?

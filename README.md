@@ -14,7 +14,7 @@ I recommend instructors survey their students before class to ensure their compu
 **To complete these activities students will need:**
 - a Github account (specifically [the student developer pack](https://education.github.com/pack)) for receiving assignments and sharing code, and for...
 - a free student account on Carto. Students can _only_ get one of these by authenticating with their [Github Student Developer pack](https://education.github.com/pack) and not the normal, free, Github account. [Go here for details and links](https://carto.com/help/getting-started/student-accounts/): the process shouldn't take long.
-- a [Google account](https://www.google.com) for using Colab, storing files in Drive, and using Google Earth Engine (_which requires a separate sign up!_), and
+- a [Google account](https://www.google.com) for using Colab, storing files in Drive, and using [Google Earth Engine](https://earthengine.google.com/) (_which requires a separate sign up!_), and
 - a version of Python 3 running locally in the event that they cannot access Colab.
 
 ## Contents & Delivery of Activities

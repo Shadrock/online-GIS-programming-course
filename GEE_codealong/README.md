@@ -4,7 +4,7 @@ Explain... see code here: https://code.earthengine.google.com/8675ccd49ee67b0048
 See other labs here: https://developers.google.com/earth-engine/tutorials/edu#introductory-remote-sensing-code-labs
 
 we start with basics of js
-![](images/)
+![](images/JS_basics_output.png)
 
 then we do the analysis
-![](images/)
+![](images/DSM_analysis_output.png)

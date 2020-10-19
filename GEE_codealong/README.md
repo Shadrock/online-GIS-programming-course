@@ -13,7 +13,7 @@ I start by opening a new file and simply doing some basic JavaScript programming
 Once the basics are out of the way, I move on to some basic analysis and visualization. The code for this can be found in the `DSM_analysis.js` file in this repo. Students are asked to start a new file (or over-write the file containing the basics of JS) and import the ALOS World 3D - 30m (AW3D30) global digital surface model (horizontal resolution of approximately 30 meters). There are actually a few versions of this available in GEE and the code I have used references bands specific to version 2.2, released in April 2019, which [can be found here](https://developers.google.com/earth-engine/datasets/catalog/JAXA_ALOS_AW3D30_V2_2). The code takes students through the steps of:
 - importing the data;
 - exlporing the data in the console window to ensure they have the right data set;
-- visualizing the data using (a cartographically incorrect) qualitative color scheme (it's the easiest to code!); and
+- visualizing the data usinga a ([cartographically incorrect](https://www.e-education.psu.edu/maps/l5_p5.html)) qualitative color scheme (it's the easiest to code!); and
 - creating a mask that only shows areas of elevation over 500 meters. 
 
 > ![](images/DSM_analysis_output.png)

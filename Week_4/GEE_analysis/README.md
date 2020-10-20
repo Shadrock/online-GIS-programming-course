@@ -3,9 +3,7 @@ In this tutorial, you'll learn how to generate an animated GIF representing 20-y
 
 ## Instructions
 
-Follow the [MODIS NDVI Times Series Animation tutorial on the GEE community web site](https://developers.google.com/earth-engine/tutorials/community/modis-ndvi-time-series-animation#2_define_clipping_and_region_boundary_geometries) or the GEE [Github repository of the same tutorial](https://github.com/google/earthengine-community/blob/master/tutorials/modis-ndvi-time-series-animation/index.md).
-
-That tutorial will walk you through your first NDVI visualization!
+Follow the [MODIS NDVI Times Series Animation tutorial on the GEE community web site](https://developers.google.com/earth-engine/tutorials/community/modis-ndvi-time-series-animation#2_define_clipping_and_region_boundary_geometries) or the GEE [Github repository of the same tutorial](https://github.com/google/earthengine-community/blob/master/tutorials/modis-ndvi-time-series-animation/index.md). That tutorial will walk you through your first NDVI visualization!
 
 # Coding Challenge
 Once you've completed the NDVI tutorial, write a script for GEE that will create the same output (an animated .gif) for a specific country. Choose any country you like. Once completed, copy the code from your GEE file into a `.js` file and place it in a new Github repo. Place your animated `.gif` in the same repo and embed it in your `README`. You will submit a link to your repo containing the code, your animated gif, and a brief write-up in your `README` about the country you selected and any observations you have. Your output should look something like this (I choose Kenya):

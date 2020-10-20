@@ -2,7 +2,7 @@
 These activities introduce students to [Google Earth Engine](https://earthengine.google.com/), which is a geospatial processing service that uses an in-browser development environment to access and analyze Google's enormous library of geospatial data. Everything runs in browser (I use [Chrome](https://www.google.com/chrome/) just to be safe) so you don't have to have students install any additional software. However, students do need to sign up for the service and should have a Google account with space in their Google drive to hold any outputs.
 
 **This folder contains two primary activities:**
-- `GEE_codealong` contains two "code along" activities. The first introducing students to the basics of JavaScript and providing a basic introduction to the functionality of the GEE development environment, while the second takes them through their first geospatial analysis and visualization in GEE.
+- `GEE_codealong` contains two "code along" activities. The first introduces students to the basics of JavaScript and provides a basic introduction to the functionality of the GEE development environment, while the second takes them through their first geospatial analysis and visualization in GEE.
 -  `GEE_analysis` points students to an existing GEE tutorial, which can be done as an assignment or a code-along, and introduces a coding challenge they must complete on their own, based on what they learned in the tutorial. I generally deliver the `README` in this folder as the instructions. 
 
 ### Purpose of these Activities

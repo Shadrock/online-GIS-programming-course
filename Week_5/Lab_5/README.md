@@ -17,7 +17,7 @@ A link to your Github repo. The repo must contain your Python code (either as sc
 In this lab, we'll be using a Pandas dataframe to combine different parts of datasets to create an interactive map. In Pandas, you can think of the dataframe as a version of a spreadsheet: it is the most commonly used Pandas data structure. You can [learn more about Pandas data structures here](https://pandas.pydata.org/pandas-docs/stable/user_guide/dsintro.html). You'll also learn about Folium. I mean... interactive maps, who can resist?!?! Finally, we're going to critically look at some of the choices we're making with our inputs and how the data we're using actually create a lousy map.
 
 # Choropleth Map Using Zip Codes (generally a terrible idea)
-This tutorial uses a `.csv` and two `.geojson` files that can be found in the [data folder](/data). We'll start by loading our files in Colab (see here for [a variety of other ways you can bring your data into Colab](https://colab.research.google.com/notebooks/io.ipynb))
+This tutorial uses a `.csv` and two `.geojson` files that can be found in the [data folder](data). We'll start by loading our files in Colab (see here for [a variety of other ways you can bring your data into Colab](https://colab.research.google.com/notebooks/io.ipynb))
 
 ```Python
 # Upload local script to Colab - running this creates a "choose file" button to upload local files.

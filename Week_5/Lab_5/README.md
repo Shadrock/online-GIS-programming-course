@@ -165,7 +165,9 @@ folium.LayerControl().add_to(statemap)
 statemap
 ```
 Your map should look something like this:
+
 ![LA Zip Map](images/State_choropleth.png)
+
 Experiment with some of Foliums features: change basemaps, attribution, symbology etc. Happy coding!
 
 # Citation

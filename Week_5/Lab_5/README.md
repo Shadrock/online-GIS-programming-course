@@ -100,6 +100,7 @@ Let's change another variable in your map. Let's change the `tiles = ` parameter
 In using zip codes, we basically choose a random geography (shape) into which we binned the point data we have for Starbucky's. And in doing so we created a rather random map because zip codes aren't connected to any real human phenomena other than mail delivery. When we use other administrative units, such as state, counties, census tracts or blocks, we're using geographies that relate to people and have been specifically designed to make some statistical sense or to relate to something in the 'real world'. This, of course, is why [gerrymandering](https://en.wikipedia.org/wiki/Gerrymandering) is such a big deal in our country: political parties create voting districts using completely made up geographies that don't really represent the underlying population.
 
 In GIS, the geography you choose to aggregate your data into, can radically alter the representation of your data. We call this the "[Modifiable Areal Unit Problem](https://www.e-education.psu.edu/sgam/node/214)" or MAUP. Have a look at the image below: exact same point data, represented as a chorolpeth using 3 different zones.
+
 ![MAUP](images/MAUP.png)
 
 Unfortunately, I see really good coders (and even some GISers) who don't understand the concepts of geography who still aggregate data into zip codes and it drives geographers crazy. [Carto has a nice blog post about this](https://carto.com/blog/zip-codes-spatial-analysis/). Whenever you aggregate data into "zonal units" (e.g. shapes, geographies, whatever you want to call it) think carefully about _why_ you are using those particular shapes.
@@ -124,7 +125,9 @@ for i,row in df.iterrows():
 laMap
 ```
 Your map should look something like this:
+
 ![LA Zip Map](images/LA-point-map.png)
+
 We can clearly see all the Starbucks in LA County as red points within the LA County region (in blue). We've also used a base map that highlights the road network (because our areas of interest are all located on roads) and that highlights national forest areas (zoom in and you'll see it). Of course, you can customize any of the colors and shapes of the points by passing some different parameters into `folium.CircleMarker`. Compare this to the map above... which one gives a more "real" understanding of the distribution of StarJunks?
 
 # Bonus Choropleth!

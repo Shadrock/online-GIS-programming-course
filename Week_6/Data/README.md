@@ -1,0 +1,1 @@
+The data in this folder were originally downloaded from https://hub.arcgis.com/datasets/a21fdb46d23e4ef896f31475217cbb08_1. When they are packaged together, they form a `.shp` file, which is commonly used with ESRI GIS software. For this tutorial, they need to be uploaded as individual files to Google colab for use in Python. 

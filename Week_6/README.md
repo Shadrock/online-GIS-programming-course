@@ -1,6 +1,6 @@
 # Geoparsing with Python
 
-This week we are going to work on _geoparsing_, which refers to the process of extracting place-names from text and matching those names with spatial coordinates. For GISers, it's easy to forget that massive amounts of geographic information are not contained with vector or raster data... not captured in `.shp` or `.gpx` files or neatly organized in `GeoJSON`... because these are the data models and file formats that we're used to working with. The reality is, however, that truly mind-bogglingly large amounts of geographic data currently reside in unstructured text. Think about it, you may attach a "location" to your social media feeds (likely where you are living or your hometown) but that doesn't reflect all the spatial references you make in social media posts. Human don't think in terms of latitude and longitude... we don't think in coordinates... and we even placenames can be a problem since so many of them are vernacular. As an aside, I still don't understand how the word "square" in Massachusetts is used to refer to often - very particular - road junctions such as "Kelley Square" in Worcester, which is less of a place than it is a terrifying act of automotive faith.
+This week we are going to work on _geoparsing_, which refers to the process of extracting place-names from text and matching those names with spatial coordinates. For GISers, it's easy to forget that massive amounts of geographic information are not contained with vector or raster data... not captured in `.shp` or `.gpx` files or neatly organized in `GeoJSON`... because these are the data models and file formats that we're used to working with. The reality is, however, that truly mind-bogglingly large amounts of geographic data currently reside in unstructured text. Think about it, you may attach a "location" to your social media feeds (likely where you are living or your hometown) but that doesn't reflect all the spatial references you make in social media posts. Human don't think in terms of latitude and longitude... we don't think in coordinates... and even placenames can be a problem since so many of them are vernacular. As an aside, I still don't understand how the word "square" in Massachusetts is used to refer to often - very particular - road junctions such as "Kelley Square" in Worcester, which is less of a place than it is a terrifying act of automotive faith.
 
 I have used geoparsing a lot; mostly for analyzing social media data for what it can say about the geography of disasters or conflict. There is a lot of interesting data in, and approaches to, analyzing social media data for crisis events ([if you're interested in this kind of thing check out CrisisLex](https://crisislex.org/)). However, geoparsing can allow you to perform all kinds of other interesting analysis. For example, you can visualize the spatial footprint of a piece text, such as a novel or a piece of legislation.
 
@@ -137,7 +137,7 @@ uploaded = files.upload()
 ```
 
 ## Plotting Our Data
-Okay... NOW we're ready to plot our data! Remember when I mentioned that I was keeping duplicate locations? Well, the fact that I did not remove duplicate location entries means that, if I set the transparency of the markers, more frequently referenced locations will appear more opaque than those referenced just once. That’s being done with the `alpha` parameter in the plot object. Opaque markers should roughly correspond to cities mentioned often, whereas transparent ones were mentioned fewer times.
+Okay... NOW we're ready to plot our data! Remember when I mentioned that I was keeping duplicate locations? Well, the fact that I did not remove duplicate location entries means that, if I set the transparency of the markers, more frequently referenced locations will appear more opaque than those referenced just once. That’s being done with the `alpha` parameter in the `plot` object. Opaque markers should roughly correspond to cities mentioned often, whereas transparent ones were mentioned fewer times.
 
 ```Python
 # world map .shp file we down/uploaded
@@ -176,7 +176,7 @@ You should now have a graph that looks something like this:
 Oh, yeah! Now we've got a map that shows the _overall_ spatial footprint of the text, as well as giving the viewer an idea of which places are mentioned more than others... but we've added a slightly deeper piece of analysis that specifically calls out the top twenty most mentioned places. Still... could we go even further? I mean... we _did_ just make some sweet maps with Folium in our previous lab...
 
 ## Creating a Folium Map of our Data
-Okay, I'm admittedly taking this tutorial kind of far... but once you've already done all the work to get the data and get it into shape, why note have some fun with it? The code below uses Folium to go ahead and produce a basic interactive map of our data.
+Okay, I'm admittedly taking this tutorial kind of far... but once you've already done all the work to get the data and get it into shape, why note have some fun with it? The code below uses Folium to produce a basic interactive map of our data.
 
 ```Python
 #import required libraries, packages, etc.

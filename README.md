@@ -1,6 +1,6 @@
 # Online GIS Programming Course Materials
-This repo contains labs, and other materials for a six-week introductory GIS programming course. This course can be delivered entirely online. The course builds on my **six-week, introduction to Python course.** By the end of these activities, students should:
-- have an intermediate understanding of Python, including manipulating a variety of file formats (I emphasize `.csv`), concatenation of data and dealing with spatial attributes, and using various libraries to create basic analytic or graphical outputs (including finishing outputs using tools such as [Carto](https://carto.com/) or [Tableau](https://www.tableau.com/));
+This repo contains 5 labs/exercises that are part of my a six-week introductory GIS programming course. This course can be delivered entirely online. The course builds on my **six-week, introduction to Python course.** By the end of these activities, students should:
+- have an intermediate understanding of Python, including manipulating a variety of file formats (these exercises contains work with `.csv` and `.shp`), concatenation of data and dealing with spatial attributes, and using various libraries to create basic analytic or graphical outputs (including finishing outputs using tools such as [Carto](https://carto.com/) or [Tableau](https://www.tableau.com/));
 - demonstrate proficiency creating a range of different scripts; and
 - have online examples the show their ability to navigate, comment on, document, and share code.
 
@@ -19,14 +19,16 @@ I recommend instructors survey their students before class to ensure their compu
 
 ## Contents & Delivery of Activities
 
-There are six folders in this repository labeled in chronological order according to the week in which they are delivered (e.g. `Week_1`). I release each lab as a stand-alone Github repository that students clone or fork into their personal Github account from which to work. Lab repositories contain instructions for completion in the `README` file. Some labs are accompanied by a starter `.py` files, data files, or other associated content, while other labs contain only the readme file. All labs also contain a `.ipynb` file (from Google Colab) that contains potential answers to the coding challenges presented in each lab.
+There are five folders in this repository labeled in chronological order according to the week in which they are delivered. I release each lab as a stand-alone Github repository that students clone or fork into their personal Github account from which to work. Lab repositories contain instructions for completion in the `README` file. Some labs are accompanied by a starter `.py` files, data files, or other associated content, while other labs contain only the readme file.
+
+Because this repo is intended for instructors, all labs also contain a `.ipynb` file (from Google Colab) that contains potential solutions to the coding challenges presented in each lab.
 
 To submit labs students edit the `README` files to answer basic questions about the labs or share their thoughts, ensure their well-commented `.py` or `.ipynb` file is in the repo, and submit a link to the repo. In some classes I’ve used [Github Classroom](https://classroom.github.com) to manage this, which doesn't require a URL submission. The lab folders in this repo contain sample solutions in an Colab notebook.
 
 By using this workflow, students learn the basics of coding in Python while concurrently learning to document and share code. At the end of the course, students also have online examples of their work in an industry-standard environment.
 
-### Exam & Final Project
-TBD.
+### Final Project
+There is a final project for this course, which is to create a tutorial similar to the ones found in this repo. I encourage students to use this as an oppotunity to experiment with a technology that we haven't covered (especially on that is relevant to their research or other courses) or to dig deeper into one the exercises and expand on it.
 
 ## Philosophy of the Course
 It may be helpful to understand how these activities fit into the larger scheme of my courses. I teach web mapping and GIS in the context of humanitarian affairs. This means that not all students will go on to become web developers or GISers and may instead (or also!) become program officers in humanitarian organizations. The primary goal of my courses is to teach how technology works and how geography or concepts of “humanitarianism” or “international development” can be mediated by it. My courses include lectures, readings and discussions on software development, licensing, diversity and inclusivity, low-connectivity environments, the digital divide, and the structure of humanitarian programs. I also introduce students to critical GIS and the emerging “Digital Geographies” conversation ([book here](https://uk.sagepub.com/en-gb/eur/digital-geographies/book258271) | [AAG specialty group here](https://twitter.com/digitalgeogsg)). In some courses, I introduce activities about [Human Centered Design](https://www.designkit.org/human-centered-design) and place an emphasis on understanding user needs. I challenge students to constantly, and critically, evaluate technology and ask who it is meant to serve, who it actually serves, and why.
@@ -38,6 +40,6 @@ I watched professors and instructors from all disciplines transition to online t
 Please familiarize yourself with the relevant national, state, and institutional policies that govern how student privacy should be protected online. In the U.S., the [Family Educational Rights and Privacy Act (FERPA)](https://studentprivacy.ed.gov/?src=fpco) is a great place to start. Two other great resources for you and your students are [the toolkit for online surveillance self-defense from the Electronic Frontier Foundation]( https://ssd.eff.org) and [“Security in a Box” from the Tactical Technology Collective]( https://securityinabox.org). I’ll update this repo with more resources for online safety and privacy as I find them.   
 
 ## References / Citations / Credits
-These activities were created as part of my “Introduction to Python” and “Introduction to Computer Programming for GIS” courses at Clark University’s [Department of International Development, Community, and Environment](https://www.clarku.edu/schools/idce/). My course assistant [Shashank Gupta](https://github.com/shashankg22) also contributed heavily to these materials and did a great job of helping me deliver the course. All links work as of September 2020, but should be checked periodically.
+These activities were created as part of my “Introduction to Python” and “Introduction to Computer Programming for GIS” courses at Clark University’s [Department of International Development, Community, and Environment](https://www.clarku.edu/schools/idce/). I'd also like to thanks course assistant [Shashank Gupta](https://github.com/shashankg22) for grading labs and helping me deliver the course. All links work as of May 2021, but should be checked periodically.
 
 The [license for this repo is CC-BY-SA-4.0](https://github.com/Shadrock/online-GIS-programming-course/blob/master/LICENSE.md), so feel free to use or adapt all of this material in your class or training program! Please contribute via pull request or get in touch with me at shadrock.roberts@gmail.com.

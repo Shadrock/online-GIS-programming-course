@@ -21,11 +21,9 @@ I recommend instructors survey their students before class to ensure their compu
 
 There are five folders in this repository labeled in chronological order according to the week in which they are delivered. I release each lab as a stand-alone Github repository that students clone or fork into their personal Github account from which to work. Lab repositories contain instructions for completion in the `README` file. Some labs are accompanied by a starter `.py` files, data files, or other associated content, while other labs contain only the readme file.
 
-Because this repo is intended for instructors, all labs also contain a `.ipynb` file (from Google Colab) that contains potential solutions to the coding challenges presented in each lab.
+Because this repo is intended for instructors, folders also contain a `.ipynb` file (from Google Colab) that contains potential solutions to the coding challenges presented in each lab. It will have a name that corresponds to the lab with `solutions` as part of the filname: don't forget to remove this before releasing the repo to your students!
 
-To submit labs students edit the `README` files to answer basic questions about the labs or share their thoughts, ensure their well-commented `.py` or `.ipynb` file is in the repo, and submit a link to the repo. In some classes I’ve used [Github Classroom](https://classroom.github.com) to manage this, which doesn't require a URL submission. The lab folders in this repo contain sample solutions in an Colab notebook.
-
-By using this workflow, students learn the basics of coding in Python while concurrently learning to document and share code. At the end of the course, students also have online examples of their work in an industry-standard environment.
+To submit labs, students edit the `README` files to answer basic questions about the labs or share their thoughts, ensure their well-commented `.py` or `.ipynb` file is in the repo, and submit a link to the repo. In some classes I’ve used [Github Classroom](https://classroom.github.com) to manage this, which doesn't require a URL submission. By using this workflow, students learn the basics of coding in Python while concurrently learning to document and share code. At the end of the course, students also have online examples of their work in an industry-standard environment.
 
 ### Final Project
 There is a final project for this course, which is to create a tutorial similar to the ones found in this repo. I encourage students to use this as an oppotunity to experiment with a technology that we haven't covered (especially on that is relevant to their research or other courses) or to dig deeper into one the exercises and expand on it.

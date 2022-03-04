@@ -1,5 +1,5 @@
 # Online GIS Programming Course Materials
-This repo contains 5 labs/exercises that are part of my a six-week introductory GIS programming course. This course can be delivered entirely online. The course builds on my six-week, introductory Python course the materials for _that_ course [are available in this repo](https://github.com/Shadrock/online-python-course). By the end of these activities, students should:
+This repo contains 5 labs/exercises that are part of my a six-week introductory GIS programming course. This course can be delivered entirely online. The course builds on my six-week, introductory Python course. Materials for _that_ course [are available in this repo](https://github.com/Shadrock/online-python-course). By the end of these activities, students should:
 - have an intermediate understanding of Python, including manipulating a variety of file formats (these exercises contains work with `.csv` and `.shp`), concatenation of data and dealing with spatial attributes, and using various libraries to create basic analytic or graphical outputs (including finishing outputs using tools such as [Carto](https://carto.com/) or [Tableau](https://www.tableau.com/));
 - demonstrate proficiency creating a range of different scripts; and
 - have online examples the show their ability to navigate, comment on, document, and share code.
